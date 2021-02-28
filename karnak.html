@@ -746,7 +746,7 @@ function click(e){
 	//The first object in the array is the closest to the camera
 	if(intersects.length > 0 ){
 geometry = new THREE.BoxGeometry(8,15,1);
- texture = new THREE.TextureLoader().load( 'images/capture.jpg' );
+ texture = new THREE.TextureLoader().load( 'images/karnak.png' );
 				let gizamaterial = new THREE.MeshBasicMaterial( { map: texture } );
 sphere= new THREE.Mesh(geometry, gizamaterial);
  sphere.position.x=-25;

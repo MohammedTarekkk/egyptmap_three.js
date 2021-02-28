@@ -88,8 +88,8 @@ function init(){
 	// scene.add(light)
 	
 	const light = new THREE.PointLight( 0xff0000, 1, 100 );
-light.position.set( 50, 50, 50 );
-scene.add( light );
+     light.position.set( 50, 50, 50 );
+     scene.add( light );
 
 
 
@@ -218,7 +218,7 @@ function click(e){
 //mankr3	
 	if(intersects.length > 0 ){
 geometry = new THREE.BoxGeometry(300,500,20);
- texture = new THREE.TextureLoader().load( 'images/khufu.png' );
+ texture = new THREE.TextureLoader().load( 'images/Menkaure.png' );
 				let gizamaterial = new THREE.MeshBasicMaterial( { map: texture } );
 sphere1= new THREE.Mesh(geometry, gizamaterial);
  sphere1.position.x=2000;
@@ -245,7 +245,7 @@ scene.add(sphere2);renderer.render(scene,camera);
 	if(intersects3.length > 0 ){
 // ////////////////////////////////////////////////////////////////////
 geometry = new THREE.BoxGeometry(300,500,20);
- texture = new THREE.TextureLoader().load( 'images/Menkaure.png' );
+ texture = new THREE.TextureLoader().load( 'images/khufu.png' );
 				let gizamaterial3 = new THREE.MeshBasicMaterial( { map: texture } );
 sphere3= new THREE.Mesh(geometry, gizamaterial3);
 sphere3.position.x=1200;
